@@ -1,4 +1,4 @@
-# 🚀 VWhatBytes Gig App
+# 🚀 WhatBytes Gig App
 
 A modern, high-performance To-Do application built with **Flutter**, **Riverpod**, and **Firebase**. This app features a stunning vibrant UI with gradients, glassmorphism, and smooth animations, designed to make task management an enjoyable experience.
 
