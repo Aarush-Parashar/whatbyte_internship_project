@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463722507264",
+    "project_id": "whatbyte-gig-app",
+    "storage_bucket": "whatbyte-gig-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463722507264:android:89d531eae3148d75013ce5",
+        "android_client_info": {
+          "package_name": "com.example.whatbyte_gig_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3HgtUcyqDcwQA-KYun_jQflwzBV-h_38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
