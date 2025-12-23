@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:intl/intl.dart';
 import 'package:uuid/uuid.dart';
 import '../models/task_model.dart';
-import '../providers/provider.dart';
+import '../providers/task_provider.dart';
 
 class AddEditTaskScreen extends StatefulWidget {
   final Task? task;

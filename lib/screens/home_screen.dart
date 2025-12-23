@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:intl/intl.dart';
-import '../models/task_model.dart'; // Ensure this import exists
-import '../providers/provider.dart';
+import '../models/task_model.dart';
+import '../providers/task_provider.dart';
 import '../widgets/task_tile.dart';
 import 'add_edit_task_screen.dart';
 
@@ -34,14 +34,12 @@ class HomeScreen extends ConsumerWidget {
       } else if (taskDate.isAtSameMomentAs(tomorrow)) {
         grouped['Tomorrow']!.add(task);
       } else if (taskDate.isBefore(today) && !task.isCompleted) {
-        // Optional: Group overdue tasks in "Today" or a separate "Overdue" key
         grouped['Today']!.add(task);
       } else {
         grouped['Upcoming']!.add(task);
       }
     }
 
-    // Remove empty groups so we don't show headers with no tasks
     grouped.removeWhere((key, value) => value.isEmpty);
     return grouped;
   }
